@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | The Cozy Café</title>
+    <meta name="description"
+        content="Discover the story behind The Cozy Café, a welcoming space inspired by great coffee, warmth and meaningful moments.">
+    <meta name="theme-color" content="#222f25">
+
+    <link rel="canonical" href="https://example.com/about.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body data-page="about">
+
+<header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="logo">the cozy café<span>.</span></a>
+
+        <button class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="nav-links">☰</button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html" class="active" aria-current="page">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero" style="min-height:400px;">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow">More than just coffee</span>
+                <h1>Our <span>Story.</span></h1>
+                <p>
+                    Every great cup has a story.
+                    Here's a little about ours.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container about-grid">
+
+            <div class="reveal">
+                <img src="images/cafe-interior.jpg"
+                    alt="Warm and welcoming café interior"
+                    class="about-image"
+                    loading="lazy">
+            </div>
+
+            <div class="about-content reveal">
+                <span class="eyebrow">Welcome to our little world</span>
+
+                <h2>A place where every moment feels special.</h2>
+
+                <p>
+                    The Cozy Café is built around a simple idea:
+                    great coffee brings people together.
+                </p>
+
+                <p style="margin-top:15px;">
+                    We believe in creating a warm and welcoming
+                    atmosphere where you can slow down, enjoy
+                    your favorite drink and make beautiful memories.
+                </p>
+
+                <p style="margin-top:15px;">
+                    Whether you're catching up with friends,
+                    working on something new or simply taking
+                    a peaceful break, there's always room for you.
+                </p>
+
+                <a href="menu.html" class="btn" style="margin-top:25px;">
+                    Explore Our Menu →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" style="background:#222f25; color:#f5f0e4;">
+        <div class="container section-heading reveal">
+
+            <span class="eyebrow">What we believe</span>
+            <h2>It's the little things that make life beautiful.</h2>
+
+            <p style="color:#d2d5ca;">
+                Quality ingredients, thoughtful preparation,
+                genuine hospitality and a comfortable space.
+                That's the heart of The Cozy Café.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container section-heading reveal">
+            <span class="eyebrow">Come say hello</span>
+            <h2>Your cozy corner is waiting.</h2>
+            <p>
+                Discover something delicious and make
+                yourself at home.
+            </p>
+            <a href="menu.html" class="btn" style="margin-top:25px;">
+                View Our Menu →
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+            <div>
+                <h3 class="logo">the cozy café<span>.</span></h3>
+                <p>Your little corner of coffee and comfort.</p>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Our Philosophy</h3>
+                <p>Freshly brewed. Lovingly served.</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © <span id="current-year"></span> The Cozy Café.
+            All rights reserved.
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
