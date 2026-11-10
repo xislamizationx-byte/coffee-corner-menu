@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Menu | The Cozy Café</title>
+    <meta name="description"
+        content="Explore The Cozy Café's menu of freshly brewed coffee, refreshing drinks and delicious bakery treats.">
+    <meta name="theme-color" content="#222f25">
+
+    <link rel="canonical" href="https://example.com/menu.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body data-page="menu">
+
+<header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="logo">the cozy café<span>.</span></a>
+
+        <button class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="nav-links">☰</button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active" aria-current="page">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero" style="min-height:400px;">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow">Freshly prepared for you</span>
+                <h1>Our <span>Menu.</span></h1>
+                <p>
+                    Every sip, every bite, a little moment
+                    of happiness.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="eyebrow">Something delicious</span>
+                <h2>Find your new favorite.</h2>
+                <p>
+                    Explore our selection of handcrafted
+                    drinks and freshly baked treats.
+                </p>
+            </div>
+
+            <div class="menu-filters" aria-label="Filter menu items">
+                <button class="filter-btn active"
+                    data-filter="all" aria-pressed="true">All</button>
+
+                <button class="filter-btn"
+                    data-filter="coffee" aria-pressed="false">Coffee</button>
+
+                <button class="filter-btn"
+                    data-filter="drinks" aria-pressed="false">Drinks</button>
+
+                <button class="filter-btn"
+                    data-filter="bakery" aria-pressed="false">Bakery</button>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-item reveal" data-category="coffee">
+                    <div>
+                        <h3>Classic Cappuccino</h3>
+                        <p>Espresso, steamed milk and silky foam.</p>
+                    </div>
+                    <span class="price">Rs. 450</span>
+                </article>
+
+                <article class="menu-item reveal" data-category="coffee">
+                    <div>
+                        <h3>Caramel Latte</h3>
+                        <p>Smooth espresso with sweet caramel.</p>
+                    </div>
+                    <span class="price">Rs. 520</span>
+                </article>
+
+                <article class="menu-item reveal" data-category="coffee">
+                    <div>
+                        <h3>Americano</h3>
+                        <p>Bold espresso with hot water.</p>
+                    </div>
+                    <span class="price">Rs. 380</span>
+                </article>
+
+                <article class="menu-item reveal" data-category="coffee">
+                    <div>
+                        <h3>Mocha</h3>
+                        <p>A delicious blend of coffee and chocolate.</p>
+                    </div>
+                    <span class="price">Rs. 550</span>
+                </article>
+
+                <article class="menu-item reveal" data-category="drinks">
+                    <div>
+                        <h3>Iced Latte</h3>
+                        <p>Chilled espresso and creamy milk.</p>
+                    </div>
+                    <span class="price">Rs. 500</span>
+                </article>
+
+                <article class="menu-item reveal" data-category="drinks">
+                    <div>
+                        <h3>Fresh Lemonade</h3>
+                        <p>Fresh lemon with a refreshing twist.</p>
+                    </div>
+                    <span class="price">Rs. 300</span>
+                </article>
+
+                <article class="menu-item reveal" data-category="bakery">
+                    <div>
+                        <h3>Butter Croissant</h3>
+                        <p>Golden, flaky and freshly baked.</p>
+                    </div>
+                    <span class="price">Rs. 280</span>
+                </article>
+
+                <article class="menu-item reveal" data-category="bakery">
+                    <div>
+                        <h3>Chocolate Brownie</h3>
+                        <p>Rich, soft and irresistibly chocolatey.</p>
+                    </div>
+                    <span class="price">Rs. 350</span>
+                </article>
+
+            </div>
+
+            <p style="text-align:center; margin-top:40px; color:#777b70;">
+                Prices are sample menu prices and can be updated.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3 class="logo">the cozy café<span>.</span></h3>
+                <p>Your little corner of coffee and comfort.</p>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Made with love</h3>
+                <p>Freshly brewed. Lovingly served.</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © <span id="current-year"></span> The Cozy Café.
+            All rights reserved.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
