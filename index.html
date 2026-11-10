@@ -4,34 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHEL</title>
-    <link rel="stylesheet" href="style.css">
 
+    <title>The Cozy Café | Coffee, Comfort & Fresh Moments</title>
+
+    <meta name="description"
+        content="Welcome to The Cozy Café. Discover freshly brewed coffee, delicious pastries and a warm café experience.">
+
+    <meta name="theme-color" content="#222f25">
+
+    <meta property="og:title" content="The Cozy Café">
+    <meta property="og:description"
+        content="Your little corner of coffee and comfort.">
+    <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://example.com/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
 </head>
-<body>
-    
-   <img src="image1.png" alt="Logo">
-    <h2>Main Menu</h2>
-    <h3 style="padding-top: 6%;">EGGS</h3>
-    <h4>Soft srambled eggs, za'atar, butter,</br> roasted cherry tomates,warm pita<h4>
-    <h5 style="font-weight: 900;">$5</h5>
-    <h3>SALAD</h3>
-    <h4>Fattoush with romaine, cucumber,</br> redish, sumac dressing ,</br> crispy pita chips</h4>
-    <h5 style="font-weight: 900;">$16</h5>
-     <div style="    margin-left: 30%;
-    margin-top: -23%;
-    position: absolute;">
-        <h3>DRINKS</h3>
-        <h4>Double shot, dark roast,</br> served Lebanese-style with a</br> glass of cold water. </h4>
-    <h5 style="font-weight: 900;">$26</h5>
-     </div>
-    
 
-     
-   
-        <button>ORDER</button>
-  
-   
+<body data-page="home">
+
+<header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+
+        <a href="index.html" class="logo">
+            the cozy café<span>.</span>
+        </a>
+
+        <button class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="nav-links">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html" class="btn">Order Your Coffee ↗</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+
+                <span class="eyebrow">Your daily dose of comfort</span>
+
+                <h1>
+                    Slow mornings.
+                    <span>Great coffee.</span>
+                </h1>
+
+                <p>
+                    A little corner of happiness, freshly brewed
+                    just for you. Discover your new favorite
+                    coffee and make every moment special.
+                </p>
+
+                <a href="menu.html" class="btn">
+                    Explore Our Menu →
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="eyebrow">A taste of happiness</span>
+                <h2>Made with love, served with warmth.</h2>
+                <p>
+                    From your first morning coffee to your
+                    afternoon sweet treat, there's something
+                    special waiting for you.
+                </p>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card reveal">
+                    <img src="images/coffee.jpg"
+                        alt="Freshly brewed cappuccino with latte art"
+                        loading="lazy">
+
+                    <div class="card-content">
+                        <h3>Signature Coffee</h3>
+                        <p>
+                            Rich aromas, smooth flavors and
+                            freshly brewed goodness.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <img src="images/dessert.jpg"
+                        alt="Freshly baked café desserts and pastries"
+                        loading="lazy">
+
+                    <div class="card-content">
+                        <h3>Fresh Bakery</h3>
+                        <p>
+                            Little bites of happiness,
+                            baked with love.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <img src="images/cafe-interior.jpg"
+                        alt="Warm and cozy café interior"
+                        loading="lazy">
+
+                    <div class="card-content">
+                        <h3>Cozy Moments</h3>
+                        <p>
+                            Your favorite place to relax,
+                            connect and unwind.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div style="text-align:center; margin-top:40px;">
+                <a href="menu.html" class="btn btn-outline">
+                    Discover Everything →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" style="background:#222f25; color:#f5f0e4;">
+        <div class="container section-heading reveal">
+            <span class="eyebrow">A little escape</span>
+            <h2>Good coffee. Good company. Good days.</h2>
+            <p style="color:#d2d5ca;">
+                Life feels a little better with a cup of coffee
+                and a place that feels like home.
+            </p>
+
+            <a href="about.html" class="btn" style="margin-top:25px;">
+                Get to Know Us →
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3 class="logo">the cozy café<span>.</span></h3>
+                <p>
+                    Your little corner of coffee, comfort
+                    and unforgettable moments.
+                </p>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Our Philosophy</h3>
+                <p>Freshly brewed. Lovingly served.</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © <span id="current-year"></span> The Cozy Café.
+            Made with ☕ and love.
+        </div>
+
+    </div>
+</footer>
 
 </body>
 </html>
